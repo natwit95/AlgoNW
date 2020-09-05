@@ -6,14 +6,18 @@
 // --- Examples:
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
-
+//Check if tests are passing 
 function palindrome(str) {
-    return str.split('').every((char, i) => {
+    return str
+        .split('')
+        .every((char, i) => {
         return char === str[str.length - i  -1]
     })
 }
 
 module.exports = palindrome;
+
+
 
 // function palindrome(str) {
 // 	const reversed = str.split("").reverse().join("");
