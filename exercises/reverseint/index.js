@@ -11,9 +11,12 @@
 function reverseInt(n) {
     const reversed = n
         .toString()
-        .split()
+        .split('')
         .reverse()
-        .join()
+        .join('')
+    if (n < 0) {
+       return parseInt(reversed) * -1; 
+    }
     return parseInt(reversed)
 }
 
